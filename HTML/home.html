@@ -1,19 +1,54 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Home</title>
 <link rel="style" type="text/css" href="style.css">
 <style>
-	
-	div { border: 1px solid #000; height: 600px; width: 600px; position: relative; top: 200px; }
+	#footer {
+    
+		position: relative;
+		height: 20px;
+		margin-top:0px;
+		clear: both;
+		padding-left: 50%;
+        } 
+
+
+	div {
+    border: 1px solid #000;
+    height: 600px;
+    width: 600px;
+    position: relative;
+    top: 287px;
+}
 	h1 { color: white;background-color:black; left: 100px; top: 150px;}
+	p {color: white;background-color:black;}
 	body{background-image: url("../Icons/homepageBackground.png")}
 	nav{background-color: white;background-size:contain;
 		padding-top: 6px;
   		padding-right: 0px;
   		padding-bottom:2px;
  		padding-left:0px;}
+ 	div.myanimation {
+    position: relative;
+    -webkit-animation-name: animate1; 
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: 2;
+    animation-name: animate1;
+    animation-duration: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+	animation-iteration-count: 2; 
+	}
+	@-webkit-keyframes animate1 {
+  	from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}	}
+	@keyframes animate1 {
+ 	from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}	}
 	
 </style>
 </head>
@@ -24,15 +59,22 @@
 
 <nav>
   <a href="home.html" style="margin: 7px"><img src="../Icons/homepageAfter.png" alt="homepage" width="170px" height="50px"></a> 
-  <a href="news.html" style="margin: 0px"><img src="../Icons/news.png" alt="news" width="130
-	px" height="50px"></a>
+  <a href="media.html" style="margin: 0px"><img src="../Icons/media.png" alt="media" width="130px" height="50px"></a>
   <a href="football.html" style="margin:4px"><img src="../Icons/football.png" alt="football" width="155px"></a> 
   <a href="tennis.html" style="margin: 2px"><img src="../Icons/tennis.png" alt="tennis" width="125px"></a> 
 </nav>
+
+<p align="center">
+This is a webpage with statistics and media of our favorite sports. 
+The intent is to provide analytical information for entertainment purposes.
+</p>
 	
-	<center><div>
+	<center><div class="myanimation"> 
 		<img src="../Icons/Group 5.png" alt="icon">
 			</div></center>
 	
+	<div id="footer" style="color:white;">	&copy;Lila&amp;Toni 
+                  </div> 
+  
 </body>
 </html>
